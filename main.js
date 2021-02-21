@@ -15,3 +15,13 @@ let texto = p.innerText // si no le ponemos un dato no cambia nada solo optiene 
 //3.- modificamos 
 
 p.innerText = texto + " y use windows 98"
+
+//listener 
+
+let boton = document.querySelector('button')
+
+boton.addEventListener('click', cambiarTexto) //entregarle una funcion a otra funcion se le llama callback
+
+function cambiarTexto() { 
+    boton.innerText = "I'am Hacker 👾"
+}
