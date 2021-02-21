@@ -25,3 +25,17 @@ boton.addEventListener('click', cambiarTexto) //entregarle una funcion a otra fu
 function cambiarTexto() { 
     boton.innerText = "I'am Hacker 👾"
 }
+
+//crear elemento en el DOM 
+
+let a = document.createElement('a')
+
+a.href = "https://github.com/Zurdo1"
+
+a.innerText = "My Github"
+
+//seleccionar el padre y meter el hijo 
+
+let section = document.querySelector('section')
+
+section.appendChild(a)
